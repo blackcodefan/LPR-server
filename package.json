@@ -1,0 +1,27 @@
+{
+  "name": "lpr-server",
+  "version": "1.0.0",
+  "description": "LPR server to handle camera image and frontend request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackcodefan/LPR-server.git"
+  },
+  "keywords": [
+    "lpr"
+  ],
+  "author": "blackcodefan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackcodefan/LPR-server/issues"
+  },
+  "homepage": "https://github.com/blackcodefan/LPR-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
