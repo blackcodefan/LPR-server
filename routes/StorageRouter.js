@@ -49,10 +49,6 @@ const thread = vehicles =>{
     });
 };
 
-const runThread = async vehicles =>  {
-    await thread(vehicles);
-};
-
 Router.put('/store', (req, res) =>{
 
     if (req.headers.authorization !== process.env.SERVER_TOKEN)
@@ -72,9 +68,9 @@ Router.put('/store', (req, res) =>{
                     vehicles.push(temp);
             });
 
-            thread(vehicles)
-                .then(res =>{console.log(res)})
-                .catch(error => console.log(error));
+            // thread(vehicles)
+            //     .then(res =>{console.log(res)})
+            //     .catch(error => console.log(error));
             res.status(200).send({success:true});
         }
     });
