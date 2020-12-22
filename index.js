@@ -14,6 +14,10 @@ app.use(express.static('upload'));
 //     console.log('MongoDB connection established successfully!')
 // });
 
+app.get('/', (req, res) =>{
+   return res.status(200).send({"message": "hello server is running!"})
+});
+
 app.use('/storage', routes.StorageRouter);
 
 app.listen(process.env.PORT || 5000, () =>{
